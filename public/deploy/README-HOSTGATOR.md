@@ -108,11 +108,11 @@ Se tiver problemas técnicos com o servidor:
 ### Para domínio principal (exemplo.com):
 - Upload na pasta: `public_html/`
 
-### Para subdomínio (app.exemplo.com):
+### Para subdomínio (azzure.exemplo.com):
 - Crie o subdomínio no cPanel primeiro
-- Upload na pasta: `public_html/app/`
+- Upload na pasta: `public_html/azzure/`
 
-### Para pasta específica (exemplo.com/meuapp):
-- Crie pasta: `public_html/meuapp/`
+### Para pasta específica (exemplo.com/azzure):
+- Crie pasta: `public_html/azzure/`
 - Upload nesta pasta
-- Acesse via: `seudominio.com/meuapp`
+- Acesse via: `seudominio.com/azzure`

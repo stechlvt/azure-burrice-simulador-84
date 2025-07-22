@@ -1,8 +1,8 @@
-# Welcome to your Lovable project
+# AZZURE - Inteligência Artificial para Investimentos
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/ec783524-daca-4f6c-b65a-ec24f39dabf0
+**AZZURE** - A única inteligência artificial que entrega as 3 melhores ações do dia com racional completo e risco calculado.
 
 ## How can I edit this code?
 

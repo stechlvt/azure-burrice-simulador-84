@@ -39,16 +39,16 @@ Se você quiser configurar um virtual host específico:
 
 ```apache
 <VirtualHost *:80>
-    ServerName seudominio.com
-    DocumentRoot /var/www/html/azure-burrice-simulador
+    ServerName azzure.com
+    DocumentRoot /var/www/html/azzure
     
-    <Directory "/var/www/html/azure-burrice-simulador">
+    <Directory "/var/www/html/azzure">
         AllowOverride All
         Require all granted
     </Directory>
     
-    ErrorLog ${APACHE_LOG_DIR}/azure-burrice-error.log
-    CustomLog ${APACHE_LOG_DIR}/azure-burrice-access.log combined
+    ErrorLog ${APACHE_LOG_DIR}/azzure-error.log
+    CustomLog ${APACHE_LOG_DIR}/azzure-access.log combined
 </VirtualHost>
 ```
 
