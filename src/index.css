@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* AZZURE Gamified Funnel Design System - HSL Colors Only */
+
+@layer base {
+  :root {
+    /* Base colors */
+    --background: 220 30% 8%;
+    --foreground: 210 40% 98%;
+
+    /* Card system */
+    --card: 220 25% 12%;
+    --card-foreground: 210 40% 98%;
+
+    /* Popover system */
+    --popover: 220 25% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Primary - AZZURE Blue */
+    --primary: 217 91% 60%;
+    --primary-foreground: 210 40% 98%;
+    --primary-glow: 217 91% 70%;
+
+    /* Secondary - Success Green */
+    --secondary: 120 60% 50%;
+    --secondary-foreground: 210 40% 98%;
+
+    /* Muted system */
+    --muted: 220 20% 20%;
+    --muted-foreground: 215.4 16.3% 65%;
+
+    /* Accent - Gold for coins */
+    --accent: 45 90% 60%;
+    --accent-foreground: 220 30% 8%;
+
+    /* Destructive - Loss Red */
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 210 40% 98%;
+
+    /* Borders and inputs */
+    --border: 220 20% 25%;
+    --input: 220 20% 20%;
+    --ring: 217 91% 60%;
+
+    /* Custom AZZURE colors */
+    --coin-gold: 45 90% 60%;
+    --profit-green: 120 60% 50%;
+    --loss-red: 0 70% 55%;
+    --warning-orange: 30 90% 60%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(217 91% 70%));
+    --gradient-success: linear-gradient(135deg, hsl(120 60% 50%), hsl(120 60% 60%));
+    --gradient-gold: linear-gradient(135deg, hsl(45 90% 60%), hsl(50 85% 65%));
+    --gradient-background: linear-gradient(180deg, hsl(220 30% 8%), hsl(220 25% 12%));
+    
+    /* Shadows */
+    --shadow-glow: 0 0 40px hsl(217 91% 60% / 0.3);
+    --shadow-coin: 0 4px 20px hsl(45 90% 60% / 0.4);
+    --shadow-card: 0 8px 32px hsl(220 30% 8% / 0.6);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark mode uses same colors as root for consistency */
+    --background: 220 30% 8%;
+    --foreground: 210 40% 98%;
+    --card: 220 25% 12%;
+    --card-foreground: 210 40% 98%;
+    --popover: 220 25% 12%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 120 60% 50%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 220 20% 20%;
+    --muted-foreground: 215.4 16.3% 65%;
+    --accent: 45 90% 60%;
+    --accent-foreground: 220 30% 8%;
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 220 20% 25%;
+    --input: 220 20% 20%;
+    --ring: 217 91% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-gradient-to-b from-background to-card text-foreground min-h-screen;
+  }
+
+  /* Custom utility classes */
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-success {
+    background: var(--gradient-success);
+  }
+  
+  .gradient-gold {
+    background: var(--gradient-gold);
+  }
+  
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .shadow-coin {
+    box-shadow: var(--shadow-coin);
+  }
+  
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  /* Animations */
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  .animate-bounce-coin {
+    animation: bounce-coin 1s ease-in-out;
+  }
+  
+  @keyframes bounce-coin {
+    0%, 100% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-10px) rotate(180deg);
+    }
+  }
+}
